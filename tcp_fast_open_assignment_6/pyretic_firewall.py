@@ -62,10 +62,10 @@ def main():
     # Note: this uses the same policy named tuple from the POX
     # firewall code. Please refer there for further info. HINT - You could use '|' in place of  '+' as well.
     for policy in policies.itervalues():
-        not_allowed = not_allowed + ( <traffic going in one direction> ) + ( <traffic going in the other direction> )
+        not_allowed = not_allowed + (match(dstmac=policy[0], srcmac=policy[1]) + (match(dstmac=policy[0],srcmac=policy[1] )
 
     # TODO express allowed traffic in terms of not_allowed - hint use '~'
-    allowed = <...>
+    allowed = ~not_allowed
 
     # and only send allowed traffic to the mac learning (act_like_switch) logic
     return allowed >> ActLikeSwitch()
