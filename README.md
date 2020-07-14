@@ -1,4 +1,3 @@
-gt-cs6250
+CS-6250 at Georgia Tech. All the assignments completed. 
 =========
-
-Project Code for Computer Networking
+Mininet, Pyretic, POX, SDN
