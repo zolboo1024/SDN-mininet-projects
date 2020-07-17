@@ -139,7 +139,8 @@ def run_topology_experiment(net):
     sender = net.getNodeByName('sender')
 
     s1 = net.getNodeByName('s1')
-
+    s2 = net.getNodeByName('s2')
+    s3 = net.getNodeByName('s3')
     # Start the receiver
     port = 5001
     recvr.cmd('iperf -s -p', port,
