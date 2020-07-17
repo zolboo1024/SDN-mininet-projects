@@ -55,9 +55,9 @@ class DDoSPolicy(BasePolicy):
 
             # Parallel composition- return the policy that you created
             
-            p1 = ~self.fsm.get_policy("ddos-attacker")
-            
-            return p1
+            listofhosts = self.fsm.get_policy("ddos-attacker")
+	    passthrough = ~listofhosts	            
+            return passthrough
 
         else:
             return self.turn_off_module(self.fsm.comp.value)
