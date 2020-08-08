@@ -1,4 +1,4 @@
-Various SDN Projects (Based on GT-CS6250)
+Various SDN Projects (Guided by GT-CS6250)
 =========
 These programs are to be run on the current version of **Mininet** (either running on a VM or through native installation).
 Documentation for setting up **Mininet** can be found at: [the Mininet Website](http://mininet.org/download/).
